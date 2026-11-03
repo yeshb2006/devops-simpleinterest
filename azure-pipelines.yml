@@ -8,7 +8,4 @@ steps:
   - task: Maven@3
     inputs:
       mavenPomFile: 'pom.xml'
-      options: '-Xmx3072m'
-      javaHomeOption: 'JDKVersion'
-      jdkVersionOption: 'default'
       goals: 'clean package'
